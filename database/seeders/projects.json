@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Project Alpha",
+        "description": "A high-priority software development project.",
+        "status": "in-progress",
+        "priority": "high",
+        "deadline": "2024-12-01",
+        "tasks": [
+            {
+                "title": "Design Wireframes",
+                "description": "Create initial wireframe designs for the UI.",
+                "priority": "medium",
+                "deadline": "2024-11-01",
+                "status": "pending"
+            },
+            {
+                "title": "Setup Database",
+                "description": "Configure MySQL database structure.",
+                "priority": "high",
+                "deadline": "2024-11-05",
+                "status": "in-progress"
+            },
+            {
+                "title": "Develop Authentication",
+                "description": "Implement user login and registration.",
+                "priority": "high",
+                "deadline": "2024-11-10",
+                "status": "pending"
+            },
+            {
+                "title": "API Integration",
+                "description": "Integrate external APIs.",
+                "priority": "medium",
+                "deadline": "2024-11-15",
+                "status": "pending"
+            },
+            {
+                "title": "Testing & Debugging",
+                "description": "Conduct tests and fix reported bugs.",
+                "priority": "high",
+                "deadline": "2024-11-25",
+                "status": "pending"
+            }
+        ]
+    },
+    {
+        "name": "Project Beta",
+        "description": "A marketing campaign management project.",
+        "status": "pending",
+        "priority": "medium",
+        "deadline": "2025-01-15",
+        "tasks": [
+            {
+                "title": "Market Research",
+                "description": "Analyze competitor campaigns.",
+                "priority": "high",
+                "deadline": "2024-12-05",
+                "status": "pending"
+            },
+            {
+                "title": "Social Media Strategy",
+                "description": "Plan social media posts and advertisements.",
+                "priority": "medium",
+                "deadline": "2024-12-15",
+                "status": "in-progress"
+            },
+            {
+                "title": "Content Creation",
+                "description": "Design campaign graphics and videos.",
+                "priority": "high",
+                "deadline": "2024-12-20",
+                "status": "pending"
+            },
+            {
+                "title": "Email Marketing",
+                "description": "Develop and schedule email marketing campaigns.",
+                "priority": "medium",
+                "deadline": "2025-01-05",
+                "status": "pending"
+            },
+            {
+                "title": "Performance Analysis",
+                "description": "Review campaign effectiveness and analytics.",
+                "priority": "low",
+                "deadline": "2025-01-10",
+                "status": "pending"
+            }
+        ]
+    },
+    {
+        "name": "Project Gamma",
+        "description": "A research and development project.",
+        "status": "completed",
+        "priority": "low",
+        "deadline": "2024-10-30",
+        "tasks": [
+            {
+                "title": "Literature Review",
+                "description": "Review existing research and publications.",
+                "priority": "medium",
+                "deadline": "2024-09-30",
+                "status": "completed"
+            },
+            {
+                "title": "Experiment Design",
+                "description": "Plan and design experiments.",
+                "priority": "high",
+                "deadline": "2024-10-05",
+                "status": "completed"
+            },
+            {
+                "title": "Data Collection",
+                "description": "Collect experimental data.",
+                "priority": "high",
+                "deadline": "2024-10-15",
+                "status": "completed"
+            },
+            {
+                "title": "Data Analysis",
+                "description": "Analyze and interpret experimental results.",
+                "priority": "medium",
+                "deadline": "2024-10-20",
+                "status": "completed"
+            },
+            {
+                "title": "Report Writing",
+                "description": "Prepare research report and findings.",
+                "priority": "low",
+                "deadline": "2024-10-25",
+                "status": "completed"
+            }
+        ]
+    },
+    {
+        "name": "Project Delta",
+        "description": "An e-commerce website development project.",
+        "status": "in-progress",
+        "priority": "medium",
+        "deadline": "2025-02-28",
+        "tasks": [
+            {
+                "title": "Design Mockups",
+                "description": "Create visual mockups of website pages.",
+                "priority": "medium",
+                "deadline": "2024-12-01",
+                "status": "completed"
+            },
+            {
+                "title": "Frontend Development",
+                "description": "Develop frontend components and UI.",
+                "priority": "high",
+                "deadline": "2024-12-15",
+                "status": "in-progress"
+            },
+            {
+                "title": "Backend Development",
+                "description": "Implement server-side logic and database.",
+                "priority": "high",
+                "deadline": "2025-01-15",
+                "status": "pending"
+            },
+            {
+                "title": "Payment Integration",
+                "description": "Integrate payment gateways and methods.",
+                "priority": "medium",
+                "deadline": "2025-02-01",
+                "status": "pending"
+            },
+            {
+                "title": "Testing & Deployment",
+                "description": "Conduct tests and deploy the website.",
+                "priority": "high",
+                "deadline": "2025-02-20",
+                "status": "pending"
+            }
+        ]
+    }
+]
