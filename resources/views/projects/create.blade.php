@@ -1,7 +1,8 @@
 <x-app-layout>
   <h1 class="text-3xl text-gray-100 font-bold text-center mt-3">Create a Project</h1>
   <div class="max-w-md mx-auto mt-6 px-4 py-6 bg-gray-800 border border-gray-700 rounded-lg shadow-md">
-    <form action="">
+    <form action="{{ route('projects.store') }}" method="POST">
+      @csrf
       <div>
         <x-input-label for="name" :value="__('Name')" />
         <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
@@ -28,7 +29,7 @@
 
       <div class="mt-4">
         <x-input-label for="date" :value="__('Date')" />
-        <x-date-input id="date" name="deadline" />
+        <x-date-input id="date" name="deadline" name="deadline" />
         <x-input-error :messages="$errors->get('date')" class="mt-2" />
       </div>
 
