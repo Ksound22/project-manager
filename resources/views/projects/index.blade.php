@@ -11,7 +11,7 @@
       @forelse ($projects as $project)
         <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-700 transition-colors h-full flex flex-col">
           <div class="flex justify-between items-center border-b border-gray-600 pb-2 mb-2">
-            <a href="{{ route('projects.show', $project) }}" class="text-xl font-semibold text-gray-200 hover:text-gray-300">
+            <a href="{{ route('projects.show', $project) }}" class="text-xl font-semibold text-gray-200 hover:text-gray-300 hover:underline">
               {{ $project->name }}
             </a>
             
