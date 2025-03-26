@@ -1,5 +1,6 @@
 <x-app-layout>
   <div class="max-w-6xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+    <a href="{{ route('projects.index') }}" class="font-bold text-white inline-block mb-4 hover:underline">Back to Projects</a>
     <div class="flex justify-between items-center mb-6">
       <h1 class="text-3xl font-bold text-white">{{ $project->name }}</h1>
       <div class="flex space-x-2">
