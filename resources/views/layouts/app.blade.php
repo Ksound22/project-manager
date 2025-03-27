@@ -29,8 +29,18 @@
 
             <!-- Page Content -->
             <main>
+                @if (session('success'))
+                    <div id="flash-message" class="bg-green-500 text-white p-3 rounded-lg w-60 mx-auto mt-4 text-center">
+                        {{ session('success') }}
+                    </div>
+                @endif
                 {{ $slot }}
             </main>
         </div>
+        <script>
+            setTimeout(() => {
+                document.getElementById('flash-message').remove();
+            }, 3000);
+        </script>
     </body>
 </html>

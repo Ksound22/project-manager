@@ -19,8 +19,8 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::resource('projects', ProjectController::class);
-Route::resource('projects.tasks', TaskController::class)->shallow();
+Route::resource('projects', ProjectController::class)->middleware('auth');
+Route::resource('projects.tasks', TaskController::class)->shallow()->middleware('auth');
 // Route::resource('projects.tasks', TaskController::class);
 
 
