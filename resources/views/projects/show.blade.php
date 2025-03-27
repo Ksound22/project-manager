@@ -88,7 +88,7 @@
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-      @forelse($project->tasks as $task)
+      @forelse($tasks as $task)
         <div class="bg-gray-800 border border-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-700 transition-colors h-full flex flex-col">
           <div class="flex justify-between items-center border-b border-gray-600 pb-2 mb-2">
             <h3 class="text-lg font-medium text-white">{{ $task->title }}</h3>
@@ -170,5 +170,8 @@
         </div>
       @endforelse
     </div>
+  </div>
+   <div class="max-w-6xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+    {{ $tasks->links() }}
   </div>
 </x-app-layout>

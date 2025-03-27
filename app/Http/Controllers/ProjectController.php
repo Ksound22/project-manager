@@ -12,7 +12,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::latest('updated_at')->get();
+        $projects = Project::latest('updated_at')->simplePaginate(9);
 
         return view('projects.index', compact('projects'));
     }
@@ -56,10 +56,9 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-        $project->load('tasks');
+        $tasks = $project->tasks()->latest('updated_at')->simplePaginate(6);
 
-        // return $project;
-        return view('projects.show', compact('project'));
+        return view('projects.show', compact('project', 'tasks'));
     }
 
     /**
