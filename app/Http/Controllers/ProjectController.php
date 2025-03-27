@@ -13,8 +13,10 @@ class ProjectController extends Controller
     public function index()
     {
         $projects = Project::latest('updated_at')->simplePaginate(9);
+        $totalProjects = Project::count();
+        $completedProjects = Project::where('status', 'completed')->count();
 
-        return view('projects.index', compact('projects'));
+        return view('projects.index', compact('projects', 'totalProjects', 'completedProjects'));
     }
 
     /**
@@ -57,8 +59,10 @@ class ProjectController extends Controller
     public function show(Project $project)
     {
         $tasks = $project->tasks()->latest('updated_at')->simplePaginate(6);
+        $totalTasks = $project->tasks()->count();
+        $completedTasks = $project->tasks()->where('status', 'completed')->count();
 
-        return view('projects.show', compact('project', 'tasks'));
+        return view('projects.show', compact('project', 'tasks', 'totalTasks', 'completedTasks'));
     }
 
     /**

@@ -1,7 +1,12 @@
 <x-app-layout>
   <div class="max-w-6xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
     <div class="flex justify-between items-center mb-6">
-      <h1 class="text-white text-3xl font-bold">My Projects</h1>
+      <h1 class="text-white text-3xl font-bold">
+        My Projects:
+        @if ($completedProjects > 0)  
+          {{ $completedProjects }} of {{ $totalProjects }} Completed
+        @endif
+      </h1>
       <a href="{{ route('projects.create') }}" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors cursor-pointer">
         New Project
       </a>
